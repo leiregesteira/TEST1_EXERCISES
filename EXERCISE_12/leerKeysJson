@@ -1,0 +1,2 @@
+let prueba = { 'XXXX’': { 'seccion' : 23, 'capitulo': 4 } } 
+let valorDesconocido = Object.keys(prueba)

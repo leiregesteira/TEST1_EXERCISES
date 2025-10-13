@@ -1,0 +1,12 @@
+//{"ISBN": 1234, "title": "TOM SAWYER", "author": "MARK TWAIN" }
+
+let convert = (libro) => { 
+	let newLibro = {
+		"ISBN" : libro['ISBN'],
+		"title" : libro['titulo'].toUpperCase(),
+		"author": libro['autor'].toUpperCase()
+}
+return newLibro
+}
+let libro = { "ISBN" : 1234, "titulo": "Tom Sawyer", "autor": "Mark Twain" }
+let book = convert(libro); 

@@ -1,0 +1,14 @@
+let response = await fetch('https://musicbrainz.org/ws/2/artist/7570a0dd-5a67-401b-b19a-261eee01a284?inc=release -groups&fmt=json')
+
+let datos = await response.json();
+
+console.log(datos);
+
+let select = document.createElement('select')
+document.body.appendChild(select)
+
+datos['release-groups'].forEach((e) => {
+	let option = document.createElement('option')
+	option.text = e.title
+	select.appendChild(option)
+})

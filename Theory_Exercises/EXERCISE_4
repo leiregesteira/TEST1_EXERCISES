@@ -1,0 +1,17 @@
+/*
+Ahora, queremos insertar elementos en dicho combobox de manera dinámica. En concreto
+queremos conseguir lo siguiente:
+Sabemos, que para introducir una nueva opción (option) en el combobox, el código comienza
+de la siguiente manera: let option = document.createElement("option"); ¿Pero,
+qué debemos añadirle para conseguir el resultado deseado?:
+a) option.text = 'Manu Chao';
+selectList.appendChild(option);
+b) option.text = 'Manu Chao';
+document.body.appendChild(option);
+c) option.value = 'Manu Chao';
+document.body.appendChild(option);
+d) option.value = 'Manu Chao';
+selectList.appendChild(option);
+ */
+
+//La respuesta correcta es la a

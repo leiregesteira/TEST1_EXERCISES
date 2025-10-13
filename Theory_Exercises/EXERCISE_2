@@ -1,0 +1,16 @@
+/* 
+Supongamos que tenemos acceso a un API que permite realizar consultas relativas a una
+colección de canciones y de artistas. Por ejemplo, sabiendo que el nombre de álbum es XXX y
+el del artista YYYY ¿Cuál sería una posible URL para realizar la consulta? (Por supuesto para
+realizar la consulta exacta y correctamente deberíamos consultar la documentación del API.
+¿Pero, de las cuatro opciones indicadas abajo cuál sería posible?)
+a) https://songs.org/api/getSongs&album=XXX?author=YYY
+b) https://songs.org/api/getSongs=album?XXX&author=YYY
+c) https://songs.org/api/getSongs?album=XXX&author=YYY
+d) https://songs.org/api/getSongs?album=XXX?author=YYY
+*/
+
+//La respuesta correcta es la c
+
+// ? se usa para rellenar
+// & para usar de 'and'

@@ -1,0 +1,13 @@
+/*
+Queremos añadirle un combobox (por el momento vacía) a la siguiente web (about:blank).
+Para ello, sabemos que debemos utilizar lo siguiente let selectList =
+document.createElement("select") ¿Pero, como insertarlo en la página?
+a) document.appendChild(selectList)
+b) document.body.appendChild(selectList)
+c) document.body.addChild(selectList)
+d) document.innerHTML = selectList
+*/
+
+//La respuesta correcta es la b
+
+//El body es necesario

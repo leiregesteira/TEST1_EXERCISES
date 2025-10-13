@@ -1,0 +1,6 @@
+let selectElem = document.createElement('select');
+document.body.appendChild(selectElem);
+let opt = document.createElement('option');
+opt.value = "12345";
+opt.text = 'Manu Chao';
+document.body.appendChild(opt);

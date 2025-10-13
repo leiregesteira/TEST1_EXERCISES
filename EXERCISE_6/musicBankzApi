@@ -1,0 +1,8 @@
+fetch('https://musicbrainz.org/ws/2/artist?query=%22Manu%20Chao%22&fmt=json')
+.then(r => r.json())
+.then(data => {
+let artistas = data.artists;
+let filtrados = artistas.filter(a => a.score > 50)
+	console.log(filtrados)
+
+})

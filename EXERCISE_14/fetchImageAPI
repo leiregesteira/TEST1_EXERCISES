@@ -1,0 +1,11 @@
+fetch('https://coverartarchive.org/release/76df3287-6cda-33eb-8e9a-044b5e15ffdd')
+.then(response => response.json())
+.then(dataJSON => {
+    const imagen = document.createElement('img')
+    imagen.src = dataJSON.images[0].image
+    imagen.width = 300
+    document.body.appendChild(imagen)
+    
+    
+})
+
