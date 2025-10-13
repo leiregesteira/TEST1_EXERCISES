@@ -1,0 +1,13 @@
+//Al resultado del ejercicio anterior, añádele la función reduce() de tal manera que sea posible
+//conocer cuántos personajes hay por edad. El resultado del ejemplo sería el siguiente: {29:2,
+//49:1}
+const personajes = [
+    { nombre: 'Norton', edad: 49 },
+    { nombre: 'Luke', edad: 29 },   
+    { nombre: 'Lucy', edad: 29 }
+];
+
+personajes.reduce((resultado, p) => {
+    resultado[p.edad] = (resultado[p.edad]||0) + 1
+    return resultado
+}, {})

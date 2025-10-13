@@ -1,0 +1,10 @@
+//Usa la función map () para conseguir la edad de los personajes.
+
+const personajes = [
+    { nombre: 'Norton', edad: 49 },
+    { nombre: 'Luke', edad: 29 },   
+    { nombre: 'Lucy', edad: 29 }
+];
+
+
+personajes.map(e => e.edad);
