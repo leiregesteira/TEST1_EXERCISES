@@ -1,5 +1,5 @@
 export class as {person};
-class Person {
+class Person { //
     constructor(gender, age, address){
         this.gender = gender;
         this.age = age;
