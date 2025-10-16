@@ -12,3 +12,21 @@ datos['release-groups'].forEach((e) => {
 	option.text = e.title
 	select.appendChild(option)
 })
+
+//OR
+
+let combobox = document.createElement('select');
+document.body.appendChild(combobox);
+
+let info = await fetch('https://musicbrainz.org/ws/2/artist/7570a0dd-5a67-401b-b19a-261eee01a284?inc=release-groups&fmt=json');
+
+let data = await info.json();
+
+let allInfo = data['release-groups'];
+let albumes = allInfo.map(allInfo => allInfo.title);
+
+albumes.forEach((a) => {
+        let select = document.createElement('option');
+        select.text = a;
+        combobox.appendChild(select);
+})
